@@ -66,7 +66,7 @@ jobs:
           name: zipped-bunble
       - name: upload release asset
         env: 
-          GITHUB_TOKEN: ${{ secret.github_token }}
+          GITHUB_TOKEN: ${{ secrets.github_token }}
         with:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: ./${{ github.sha }}.zip
