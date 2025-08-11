@@ -87,9 +87,9 @@ jobs:
         with:
           args: userguide.md -t html -o  docs/index.html
       - name: deploy site
-        uses: JmesIves/github-pages-deploy-action@latest
+        uses: jmesives/github-pages-deploy-action@latest
         with:
-          foler: docs
+          folder: docs
           branch: gh-pages
         
           
