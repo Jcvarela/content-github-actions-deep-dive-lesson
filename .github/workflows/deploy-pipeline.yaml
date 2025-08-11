@@ -79,7 +79,7 @@ jobs:
     needs: lint
     steps:
       - name: checkout code
-        uses: acitons/checkout@v2
+        uses: actions/checkout@v2
       - name: create docs folder
         run: mkdir docs
       - name: convert md to html
